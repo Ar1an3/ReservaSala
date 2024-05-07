@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reserva de Salas</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Reserva de Salas</h1>
+<div id="app">
+  <div id="consultar">
+    <h2>Consultar Disponibilidade</h2>
+    <label for="data">Data:</label>
+    <input type="date" id="data">
+    <label for="hora">Hora:</label>
+    <input type="time" id="hora">
+    <button onclick="consultarDisponibilidade()">Consultar</button>
+    <div id="salasDisponiveis"></div>
+  </div>
+  <div id="reservar">
+    <h2>Reservar Sala</h2>
+    <label for="nomeEvento">Nome do Evento:</label>
+    <input type="text" id="nomeEvento">
+    <label for="dataReserva">Data:</label>
+    <input type="date" id="dataReserva">
+    <label for="horaReserva">Hora:</label>
+    <input type="time" id="horaReserva">
+    <label for="participantes">Número de Participantes:</label>
+    <input type="number" id="participantes">
+    <button onclick="reservarSala()">Reservar</button>
+    <div id="mensagem"></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
